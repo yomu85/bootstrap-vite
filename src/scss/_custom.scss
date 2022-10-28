@@ -1,0 +1,85 @@
+$tablet: "all and (min-width: 768px)";
+
+$color--white: #fff;
+$radius--size: .4rem;
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.4rem;
+  // font-family: 'Noto Sans KR', 'Roboto', 'Malgun Gothic', 'Montserrat', Tahoma, Helvetica, AppleGothic, Helvetica, Sans-serif;
+}
+
+// button custom
+.btn {
+  font-size: 1.4rem;
+  @media #{$tablet} {
+    font-size: 2rem;
+  }
+  &.btn-primary {
+    color: $color--white;
+    &:active, &:focus, &:hover {
+      color: $color--white;
+    }
+  }
+}
+
+// dropdown custom
+.dropdown-menu {
+  overflow-y: auto;
+  font-size: 1.5rem;
+  height: 10rem;
+
+  // inner scroll custom
+  &::-webkit-scrollbar {
+    width: .4rem;
+    height: .4rem;
+    border-top-right-radius: $radius--size;
+    border-bottom-right-radius: $radius--size;
+    background-color: $color--white;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #D2D2D2;
+    border-radius: .2rem;
+  }
+}
+.dropdown-toggle.show::after {
+  border-top: 0;
+  border-right: .3em solid transparent;
+  border-bottom: .3em solid;
+  border-left: .3em solid transparent;
+}
+
+// input custom
+.form-control {
+  height: 4rem;
+  border-color: #d2d2d2;
+  border-radius: $radius--size;
+}
+
+// swiper
+.swiper {
+  width: 100%;
+  height: 20rem;
+}
+
+.swiper-slide {
+  height: 20rem;
+  text-align: center;
+  font-size: 1.8rem;
+  background: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
