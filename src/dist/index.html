@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <script type="module" crossorigin src="/assets/index.9105fa06.js"></script>
+  <link rel="stylesheet" href="/assets/index.03012079.css">
+</head>
+
+<body>
+  <!-- //드랍다운 모음: data-bs-toggle="dropdown" 사용 -->
+  <div class="dropdown">
+    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+      디자인 셀렉트
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><a class="dropdown-item" href="#">Action</a></li>
+    </ul>
+  </div>
+  
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary">분리 디자인 셀렉트</button>
+    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">
+      <span class="visually-hidden">Toggle Dropdown</span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li>
+        <hr class="dropdown-divider">
+      </li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </div>
+  <!-- 드랍다운 모음// -->
+  
+  <hr class="divider">
+
+  <!-- //탭 모음: data-bs-toggle="tab"로 data-bs-target의 탭 호출 -->
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" id="my-tab">
+    <li class="nav-item">
+      <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab1">탭1</button>
+    </li>
+    <li class="nav-item">
+      <button type="button" class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab2">탭2</button>
+    </li>
+    <li class="nav-item">
+      <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab3">탭3</button>
+    </li>
+    <li class="nav-item">
+      <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab4">탭4</button>
+    </li>
+  </ul>
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div class="tab-pane" id="tab1" tabindex="0">
+      1아름 다운 강산에 이따롱<br> 카롱 마카롱 아름 다운 강산에 이따롱<br> 카롱 마카롱아름 다운 강산에 이따롱<br> 카롱 마카롱
+    </div>
+    <div class="tab-pane active" id="tab2" tabindex="0">
+      2카롱 마카롱아름 다운 강산에 이따롱<br> 카롱 마카롱
+    </div>
+    <div class="tab-pane" id="tab3" tabindex="0">
+      3강산에 이따롱<br> 카롱 마카롱 아름 다운 강산에 이따롱<br> 카롱 마카롱아름 다운 강산에 이따롱<br> 카롱 마카롱
+    </div>
+    <div class="tab-pane" id="tab4" tabindex="0">
+      4다운 강산에 이따롱<br> 카롱 마카롱아름 다운 강산에 이따롱<br> 카롱 마카롱
+    </div>
+  </div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-pills" id="pills-tab">
+    <li class="nav-item">
+      <button type="button" class="nav-link active" data-bs-toggle="tab" data-bs-target="#pills-home">Home</button>
+    </li>
+    <li class="nav-item">
+      <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#pills-profile">Profile</button>
+    </li>
+    <li class="nav-item">
+      <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#pills-contact">Contact</button>
+    </li>
+    <li class="nav-item">
+      <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#pills-disabled" disabled>Disabled</button>
+    </li>
+  </ul>
+  <!-- Tab panes -->
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" tabindex="0">
+      1
+    </div>
+    <div class="tab-pane fade" id="pills-profile" tabindex="0">
+      2
+    </div>
+    <div class="tab-pane fade" id="pills-contact" tabindex="0">
+      3
+    </div>
+    <div class="tab-pane fade" id="pills-disabled" tabindex="0">
+      4
+    </div>
+  </div>
+  <!-- 탭 모음// -->
+  
+  <hr class="divider">
+
+  <!-- //모달 모음: data-bs-toggle="modal"로 data-bs-target의 모달 호출 -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+    첫번째 모달 열기
+  </button>
+  <div class="modal" id="exampleModalToggle" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          1번째 팝업 내용입니다.
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">두번째 팝업 열기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="exampleModalToggle2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <p>2번째 팝업 내용입니다.</p>
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">첫번째 팝업 가기</button>
+      </div>
+    </div>
+  </div>
+  <!-- 모달 모음// -->
+
+  <hr class="divider">
+
+  <!-- //콜랩스 모음: data-bs-toggle="collapse" 사용 -->
+  <p>
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample">
+      콜랩스 슬라이드
+    </button>
+  </p>
+  <div class="collapse" id="collapseExample">
+    <div class="card card-body">
+      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user
+      activates the relevant trigger.
+    </div>
+  </div>
+  <!-- 콜랩스 모음// -->
+
+  <hr class="divider">
+
+  <!-- //아코디언 모음 data-bs-toggle="collapse"로 data-bs-target의 콜랩스 호출  -->
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+          콜랩스를 이용한 아코디언 #1
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds
+          the appropriate classes that we use to style each element. These classes control the overall appearance, as well
+          as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our
+          default variables. It's also worth noting that just about any HTML can go within the
+          <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+          콜랩스를 이용한 아코디언 #2
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin
+          adds the appropriate classes that we use to style each element. These classes control the overall appearance, as
+          well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our
+          default variables. It's also worth noting that just about any HTML can go within the
+          <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+          콜랩스를 이용한 아코디언 #3
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
+          adds the appropriate classes that we use to style each element. These classes control the overall appearance, as
+          well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our
+          default variables. It's also worth noting that just about any HTML can go within the
+          <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+        <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne">
+          아코디언 타입2 #1
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+        <div class="accordion-body">
+          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds
+          the appropriate classes that we use to style each element. These classes control the overall appearance, as well
+          as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our
+          default variables. It's also worth noting that just about any HTML can go within the
+          <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo">
+          아코디언 타입2 #2
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin
+          adds the appropriate classes that we use to style each element. These classes control the overall appearance, as
+          well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our
+          default variables. It's also worth noting that just about any HTML can go within the
+          <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree">
+          아코디언 타입2 #3
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
+          adds the appropriate classes that we use to style each element. These classes control the overall appearance, as
+          well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our
+          default variables. It's also worth noting that just about any HTML can go within the
+          <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 아코디언 모음// -->
+
+  <hr class="divider">
+
+  <!-- //오프캔버스 모음 data-bs-toggle="offcanvas"로 data-bs-target의 오프캔버스 방향대로 호출  -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">우측에서 열기</button>
+  
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">잡코리아 메뉴</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <ul>
+      <li>잡코리아</li>
+      <li>알바몬</li>
+      <li>긱몬</li>
+    </ul>
+  </div>
+
+  <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom">아래에서 열기</button>
+  
+  <div class="offcanvas offcanvas-bottom" data-bs-backdrop="static" tabindex="-1" id="offcanvasBottom">
+    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <ul>
+      <li>잡코리아</li>
+      <li>알바몬</li>
+      <li>긱몬</li>
+    </ul>
+  </div>
+  <!-- 오프캔버스 모음// -->
+
+  <hr class="divider">
+
+  <!-- //툴팁 모음 data-bs-toggle="tooltip"으로 data-bs-placement 방향대로 data-bs-${title} 내용을 호출  -->
+  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right"
+    data-bs-title="검색 이력을 바탕으로 연간 키워드를 추천해드립니다.">
+    우측 툴팁
+  </button>
+  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+    data-bs-title="검색 이력을 바탕으로 연간 키워드를 추천해드립니다.">
+    상단 툴팁
+  </button>
+  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+    data-bs-title="검색 이력을 바탕으로 연간 키워드를 추천해드립니다.">
+    하단 툴팁
+  </button>
+  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left"
+    data-bs-title="검색 이력을 바탕으로 연간 키워드를 추천해드립니다.">
+    좌측 툴팁
+  </button>
+  <!-- 툴팁 모음//  -->
+
+  <hr class="divider">
+
+  <!-- //팝오버 모음 data-bs-toggle="popover"으로 data-bs-placement 방향대로 data-bs-${content} 내용을 호출  -->
+  <button type="button" class="btn btn-secondary" data-bs-toggle="popover"
+    data-bs-placement="right" data-bs-content="검색 이력을 바탕으로 연간 키워드를 추천해드립니다.">
+    우측 팝오버
+  </button>
+  <button type="button" class="btn btn-secondary" data-bs-trigger="focus" data-bs-toggle="popover"
+    data-bs-placement="top" data-bs-content="검색 이력을 바탕으로 연간 키워드를 추천해드립니다.">
+    바디 클릭시 닫히는 팝오버
+  </button>
+  <button type="button" class="btn btn-secondary" data-bs-toggle="popover"
+    data-bs-placement="bottom" data-bs-content="검색 이력을 바탕으로 연간 키워드를 추천해드립니다.">
+    하단 팝오버
+  </button>
+  <button type="button" class="btn btn-secondary" data-bs-toggle="popover"
+    data-bs-placement="left" data-bs-content="검색 이력을 바탕으로 연간 키워드를 추천해드립니다.">
+    좌측 팝오버
+  </button>
+  <!-- 팝오버 모음//  -->
+
+  <hr class="divider">
+
+  <!-- //스와이프 모음: .mySwiper로 스크립트 호출 -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">swiper 1</div>
+      <div class="swiper-slide">swiper 2</div>
+      <div class="swiper-slide">swiper 3</div>
+      <div class="swiper-slide">swiper 4</div>
+      <div class="swiper-slide">swiper 5</div>
+      <div class="swiper-slide">swiper 6</div>
+      <div class="swiper-slide">swiper 7</div>
+      <div class="swiper-slide">swiper 8</div>
+      <div class="swiper-slide">swiper 9</div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <!-- 스와이프 모음// -->
+
+  <hr class="divider">
+
+  <!-- //입력폼 요소 -->
+  <input class="form-control" type="text" placeholder="직무를 선택하세요" aria-label="default input example">
+  <!-- 입력폼 요소// -->
+
+  <hr class="divider">
+</body>
+
+</html>
